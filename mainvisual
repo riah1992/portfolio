@@ -1,0 +1,36 @@
+	<!-- 메인비쥬얼 영역 시작-->		
+		<div id="visual_wrap">
+        
+           <h2 class="hidden">메인비쥬얼</h2>
+            
+          
+            <div id="visual_inner">
+                    
+                <ul id="visual_list">
+                        <li>
+                            <a href="#"><img src="/images/header_visual_03.gif"></a>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><img src="/images/header_visual_01.gif"></a>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><img src="/images/header_visual_02.gif"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/images/header_visual_04.gif"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/images/header_visual_05.gif"></a>
+                        </li>
+                     
+                </ul>
+
+
+                <span id="arrow_prev" href="#"><img src="/images/header_arrow_prev.png" alt="이전보기"></span>      
+                <span id="arrow_next" href="#"><img src="/images/header_arrow_next.png" alt="다음보기"></span>               
+            </div>
+            
+    </div>
+		
