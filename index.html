@@ -1,272 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>메인시안</title>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:regular,italic,700,700italic" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/media_screen.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="웹 퍼블리싱 실무를 기반으로 프론트엔드 개발로 확장하고 있는 주리아의 포트폴리오입니다." />
+  <meta property="og:title" content="주리아 | UI Publisher & Frontend Developer" />
+  <meta property="og:description" content="화면을 정확하게 구현하고, 데이터와 사용자 행동까지 연결합니다." />
+  <title>주리아 | UI Publisher & Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!--바로가기메뉴시작-->
-    <ul class="skipmenu_list">
-        <li><a href="">메뉴바로가기</a></li>
-        <li><a href="">본문바로가기</a></li>
-        <li><a href="">하단바로가기</a></li>
-    </ul>
-    <!--바로가기메뉴끝-->
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
 
-    <!--상단메뉴시작-->
-    <div id="header_wrap">
-        <header id="header_inner">
-            <h1 id="logo">
-                <a href="#"><img src="/images/logo.png" alt="pullandbear"></a>
-            </h1>
-            
-                <nav id="mainmenu">
-                 <h2 class="hidden">메인메뉴</h2>
-                    <ul id="mainmenu_list">
-                        <li><a href="#">브랜드소개</a></li>
-                        <li><a href="#">THE NEWEST</a></li>
-                        <li><a href="#">추천룩</a></li>
-                        <li><a href="#">COLLECTIONS</a></li>
-                        <li><a href="#">커뮤니티</a></li>
-                        <li><a href="#">소셜</a></li>
-                    </ul>
-                </nav>
-                
-                <p id="shop"><a href="#"><img src="/images/shop.gif" alt="shop"></a></p>            
-                <p id="mobilemenu"><a href="#"><img src="/images/mobilemenu.png" alt="모바일메뉴"></a></p>          
-               
-        </header>
-    </div>
-    <!--상단메뉴끝-->
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="홈으로 이동">RIA<span>.</span></a>
+    <nav aria-label="주요 메뉴">
+      <a href="#about">소개</a>
+      <a href="#work">프로젝트</a>
+      <a href="#experience">경력</a>
+      <a href="#contact">연락</a>
+    </nav>
+  </header>
 
-    <!--비쥬얼영역시작-->
-    <div id="visual_wrap">
-        
-           <h2 class="hidden">메인비쥬얼</h2>
-            <ul id="visual_list">
-                <li>
-                   <a href="#"><img src="/images/header_visual_01.gif"></a>
-                </li>
+  <main id="main">
+    <section class="hero" id="top">
+      <p class="eyebrow">UI PUBLISHER · FRONTEND DEVELOPER</p>
+      <h1>화면을 정확하게,<br /><em>경험은 자연스럽게.</em></h1>
+      <div class="hero-bottom">
+        <p>약 4년의 웹 퍼블리싱 실무를 바탕으로<br />데이터와 사용자 행동이 연결되는 화면을 만듭니다.</p>
+        <a class="round-link" href="#work" aria-label="프로젝트 보기">
+          <span>WORK</span><span aria-hidden="true">↘</span>
+        </a>
+      </div>
+      <div class="hero-index" aria-hidden="true">
+        <span>SEOUL · KR</span><span>PORTFOLIO 2026</span>
+      </div>
+    </section>
 
-                <li>
-                    <a href="#"><img src="/images/header_visual_02.gif"></a>
-                </li>
-                
-                <li>
-                   <a href="#"><img src="/images/header_visual_03.gif"></a>
-                </li>        
-            </ul>
-          
-            <div id="visual_inner">
-                <a id="arrow_preview" href="#"><img src="/images/header_arrow_preview.png" alt="이전보기"></a>      
-                <a id="arrow_next" href="#"><img src="/images/header_arrow_next.png" alt="다음보기"></a>               
-            </div>
-            
-    </div>
-    <!--비쥬얼영역끝-->
-
-    <!--배너시작-->
-    <div id="banner_wrap">
-            <div id="banner_inner">
-                <a id="banner_text" href="#">PULL&BEAR<span> X </span>STRANGER THINGS</a>                   
-                <a id="banner_image" href="#"><img src="/images/banner_img.gif" alt="넷플릭스이미지"></a>        
-            </div>        
-    </div>
-    <!--배너끝-->
-
-    <!--인트로 시작-->
-    <div id="intro_wrap">
-       
-       
-            <div id="intro_text">
-                <h1 class="title">
-                 AN EVERY YOUNG COMMUNITY   
-                </h1>
-                <h2 class="sub_title">
-                인디텍스에서 전개하는 패션 브랜드 PULL&BEAR 캘리포니아 감성을 한국에서 만나보세요!
-                </h2>
-            </div>
-            
-
-            <div id="intro_contents">
-                <ul id="intro_list">
-                   
-                    <li>
-                        <div class="intro_won">
-                            <p class="intro_won_text">
-                            스페인
-                                <span>본사</span>
-                            </p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="intro_won">
-                            <p class="intro_won_text">
-                            1991년
-                                <span>창립</span>
-                            </p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="intro_won">
-                            <p class="intro_won_text">
-                            970개 이상
-                                <span>전세계 상점</span>
-                            </p>
-                        </div>
-                    </li>    
-               
-                </ul>  
-            </div>
-
-        
-    </div>
-    <!--인트로 끝-->
-
-
-    <!--NEWEST 시작-->
-    <div id="newest_wrap">
-
-            <div id="newest_text">
-                <h1 class="title">
-                THE NEWEST  
-                </h1>
-                <h2 class="sub_title">
-                트렌디하고 유니크한 PULL&BEAR의 최신 컨셉을 지금 바로 만날 수 있는 기회! 
-                </h2>
-            </div>
-
-            <ul id="newest_list">
-                <li>
-                    <img src="/images/newest_image_01.gif" alt="#">
-                    <a class="newest_main_button" href="">WOMAN</a>
-                </li>
-                <li>
-                    <img src="/images/newest_image_02.gif" alt="#">
-                    <a class="newest_main_button" href="">MAN</a>
-                </li>
-                <li>
-                    <img src="/images/newest_image_03.gif" alt="#">
-                    <a class="newest_main_button" href="">WOMAN</a>
-                </li>
-                <li>
-                    <img src="/images/newest_image_04.gif" alt="#">
-                    <a class="newest_main_button" href="">MAN</a>
-                </li>              
-            </ul>
-
-            <div id="newest_arrow">
-                <a id="newest_arrow_preview" href=""><img src="/images/newest_arrow_preview.png" alt="이전보기"></a>
-                <a id="newest_arrow_next" href="#"><img src="/images/newest_arrow_next.png" alt="다음보기"></a>                  
-            </div>
-
-            <ul id="newest_dot">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-
-       
-    </div>
-    <!--NEWEST 끝-->
-
-    
-    <!--recommend시작-->
-
-    <div id="recommend_wrap">
-     
-            <div id="recommend_text">
-                <h1 class="title">
-                추천룩
-                </h1>
-                <h2 class="sub_title">
-                F/W 시즌을 맞아 PULL&BEAR가 추천하는 코디를 구경해보세요!
-                </h2>
-            </div>
-
-            <ul id="recommend_list">
-               <li><a href=""><img src="/images/recommend_image_01.gif"></a></li>
-               <li><a href=""><img src="/images/recommend_image_02.gif"></a></li>
-               <li><a href=""><img src="/images/recommend_image_03.gif"></a></li>
-               <li><a href=""><img src="/images/recommend_image_04.gif"></a></li>
-               <li><a href=""><img src="/images/recommend_image_05.gif"></a></li>
-            </ul>
-           
-            <div id="recommend_scroll">
-                <p id="scroll_line"><img src="/images/recommend_scroll_line.gif"></p>
-                <p id="scroll_bar"><img src="/images/recommend_scroll_bar.gif"></p>
-            </div>
-    </div>
-    <!--recommend끝-->
-
-    <!--collections시작-->
-
-    <div id="collections_wrap">
-        <div id="collections_inner">
-
-            <div id="collections_contents_wrap">
-                <div id="collections_contents">
-                        <div id="collections_text">
-                            <h1 class="title">
-                                <span>NETFLIX</span> STRANGER THINGS
-                            </h1>
-                            <h2 class="sub_title">
-                                넷플릭스에서 방영중인 '기묘한 이야기'와의 컬렉션 상품을 지금 바로 만나보세요.
-                            </h2>
-                        </div>
-        
-                        <ul id="collections_sub_img_list">
-                            <li><img src="/images/collections_sub_img01.gif" alt=""></li>
-                            <li><img src="/images/collections_sub_img02.gif" alt=""></li>
-                            <li><img src="/images/collections_sub_img03.gif" alt=""></li>
-                        </ul>
-        
-                        <a id="collections_detail_button" href="">자세히보기</a>
-                </div>
-            </div>
-
-            <div id="collections_visual_wrap">
-                <div id="collections_visual_inner">
-                    
-                </div>    
-            </div>
-
-            <ul id="collections_dot">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-
+    <section class="intro section" id="about">
+      <div class="section-label"><span>01</span> ABOUT</div>
+      <div class="intro-copy reveal">
+        <h2>디자인을 코드로 옮기는 일에서 시작해,<br />서비스의 흐름을 구현하는 개발자로.</h2>
+        <div class="intro-grid">
+          <p>교육·공공·커머스 서비스의 웹·모바일 화면을 구축하고 운영했습니다. 퍼블리셔 재직 기간에는 HTML과 CSS를 중심으로 레이아웃과 UI 완성도를 책임졌습니다.</p>
+          <p>2026년부터 JavaScript, Thymeleaf, Java, Spring Boot 환경에서 관리자 기능과 데이터 조건별 UI를 구현하며 프론트엔드 개발 영역으로 확장하고 있습니다.</p>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <!--collections끝-->
+    <section class="projects section" id="work">
+      <div class="section-label"><span>02</span> SELECTED WORK</div>
 
-    <!--footer시작-->
-    <div id="footer_wrap">
-        <div id="footer_inner">
-            <p id="footer_logo"><img src="/images/footer_logo.png" alt="pullandbear"></p>
+      <article class="project project-dark reveal">
+        <div class="project-head">
+          <div>
+            <p class="project-number">PROJECT 01 · COMMERCE ADMIN</p>
+            <h2>WIZ SHOP<br />MENU SYSTEM</h2>
+          </div>
+          <p class="project-summary">계층형 관리자 메뉴를 구성하고 등록·수정, 입력 검증, 상태에 따른 UI 변화를 구현했습니다.</p>
         </div>
-    </div>
 
-    <!--footer끝-->
+        <div class="state-compare">
+          <figure>
+            <img src="assets/wiz-group.png" alt="그룹 선택 시 URL 입력란이 비활성화된 관리자 메뉴 화면" loading="lazy" />
+            <figcaption><span>01</span> GROUP STATE — 하위 메뉴를 갖는 그룹 상태</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/wiz-link.png" alt="링크 선택 시 URL 입력란이 활성화된 관리자 메뉴 화면" loading="lazy" />
+            <figcaption><span>02</span> LINK STATE — URL을 연결하는 링크 상태</figcaption>
+          </figure>
+        </div>
 
+        <div class="project-detail-grid">
+          <div class="detail-card">
+            <span class="detail-kicker">CHALLENGE</span>
+            <h3>복잡한 메뉴 상태를<br />명확한 규칙으로</h3>
+            <p>그룹·링크 유형과 사용 여부에 따라 입력 영역과 메뉴 스타일이 자연스럽게 달라지도록 화면 상태를 설계했습니다.</p>
+          </div>
+          <figure class="toast-figure">
+            <img src="assets/wiz-toast.png" alt="메뉴명 필수 입력 검증 토스트 메시지" loading="lazy" />
+            <figcaption>필수값 검증과 즉각적인 사용자 피드백</figcaption>
+          </figure>
+        </div>
 
+        <ul class="tag-list" aria-label="위즈샵 사용 기술">
+          <li>JavaScript</li><li>Thymeleaf</li><li>HTML</li><li>CSS</li><li>Spring Boot</li><li>MyBatis</li>
+        </ul>
+      </article>
 
+      <article class="project project-light reveal">
+        <div class="project-head">
+          <div>
+            <p class="project-number">PROJECT 02 · BOARD BUILDER</p>
+            <h2>PADLET<br />BOARD</h2>
+          </div>
+          <p class="project-summary">관리자가 카드 배치와 카테고리를 설정하고 게시물을 등록·관리할 수 있는 게시판 모듈입니다.</p>
+        </div>
 
-    
+        <figure class="feature-visual">
+          <img src="assets/padlet-list.png" alt="패들릿 게시판 데이터 관리 목록 화면" loading="lazy" />
+          <figcaption>데이터 관리 · 검색 · 게시물 카드 목록</figcaption>
+        </figure>
+
+        <div class="padlet-grid">
+          <figure>
+            <img src="assets/padlet-layout.png" alt="패들릿 카드 레이아웃 설정 미리보기" loading="lazy" />
+            <figcaption>반응형 카드 배치 미리보기</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/padlet-category.png" alt="패들릿 카테고리 색상 설정 화면" loading="lazy" />
+            <figcaption>카테고리 생성 및 색상 설정</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/padlet-editor.png" alt="패들릿 게시물 등록과 썸네일 설정 화면" loading="lazy" />
+            <figcaption>게시물·썸네일·첨부파일 등록</figcaption>
+          </figure>
+        </div>
+
+        <div class="project-notes">
+          <div><strong>01</strong><span>게시판 기본정보와<br />노출 옵션 설정</span></div>
+          <div><strong>02</strong><span>카테고리 및<br />카드 스타일 관리</span></div>
+          <div><strong>03</strong><span>게시물 CRUD와<br />데이터 관리 흐름</span></div>
+        </div>
+
+        <ul class="tag-list" aria-label="패들릿 게시판 사용 기술">
+          <li>Java</li><li>JSP</li><li>JavaScript</li><li>SQL</li><li>HTML</li><li>CSS</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="experience section" id="experience">
+      <div class="section-label"><span>03</span> EXPERIENCE</div>
+      <div class="timeline">
+        <article class="timeline-row reveal">
+          <time>2026 — NOW</time>
+          <div><h3>Frontend · Application Development</h3><p>관리자 기능, JavaScript 상태 처리, Thymeleaf 기반 화면, Java·SQL 데이터 흐름</p></div>
+          <span class="timeline-mark">02</span>
+        </article>
+        <article class="timeline-row reveal">
+          <time>2021 — 2026</time>
+          <div><h3>Web Publisher · UI Development</h3><p>교육·공공 서비스의 웹·모바일 퍼블리싱, 반응형 레이아웃, UI 구축 및 유지보수</p></div>
+          <span class="timeline-mark">01</span>
+        </article>
+      </div>
+
+      <div class="project-archive reveal">
+        <p>ADDITIONAL EXPERIENCE</p>
+        <ul>
+          <li><span>통통통 서비스 개편</span><span>교육 서비스 · 장기 운영</span></li>
+          <li><span>훈장마을 서비스 개편</span><span>웹·앱 UI 퍼블리싱</span></li>
+          <li><span>경기도교육복지종합센터</span><span>공공기관 홈페이지 구축</span></li>
+          <li><span>오산교육재단 진로진학정보</span><span>교육기관 페이지 구축</span></li>
+          <li><span>KOTRA 서울푸드</span><span>행사 홈페이지 구축</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="skills section">
+      <div class="section-label"><span>04</span> CAPABILITIES</div>
+      <div class="skill-cloud reveal" aria-label="보유 기술">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive UI</span><span>Thymeleaf</span><span>Java</span><span>Spring Boot</span><span>MyBatis</span><span>SQL</span><span>Git</span><span>eXBuilder6</span>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="eyebrow">LET'S WORK TOGETHER</p>
+      <h2>좋은 화면은<br /><em>좋은 흐름</em>에서 시작됩니다.</h2>
+      <a class="contact-link" href="https://github.com/riahjoo" target="_blank" rel="noreferrer">
+        GITHUB 방문하기 <span aria-hidden="true">↗</span>
+      </a>
+      <div class="contact-footer"><span>JOO RIA · 2026</span><a href="#top">BACK TO TOP ↑</a></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
