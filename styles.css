@@ -142,7 +142,19 @@ figcaption { font-family: var(--kr); font-size: .73rem; line-height: 1.5; }
 .skill-cloud span:hover { color: var(--ink); background: var(--lime); border-color: var(--lime); transform: translateY(-3px); }
 
 .contact { min-height: 86svh; padding: clamp(5rem, 10vw, 10rem) clamp(1.25rem, 5vw, 5rem) 2rem; color: white; background: var(--ink); display: flex; flex-direction: column; justify-content: center; }
-.contact-link { align-self: flex-start; margin-top: 4rem; padding: 1rem 0; border-bottom: 1px solid var(--lime); color: var(--lime); font-size: .8rem; letter-spacing: .12em; }
+.contact-description { max-width: 48rem; margin: 2rem 0; color: #bdc3cf; font-family: var(--kr); font-size: 1rem; line-height: 1.85; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+.email-button, .copy-email { display: inline-flex; align-items: center; justify-content: center; gap: 1.5rem; min-height: 48px; padding: .9rem 1.4rem; border: 1px solid var(--lime); border-radius: .25rem; font: 600 1rem var(--kr); cursor: pointer; }
+.email-button { background: var(--lime); color: var(--ink); }
+.copy-email { background: transparent; color: white; border-color: #758093; }
+.copy-email[hidden] { display: none; }
+.email-button:hover { background: #e5ff8e; }
+.copy-email:hover { background: #202936; }
+.copy-email:disabled { cursor: wait; opacity: .65; }
+.contact a:focus-visible, .copy-email:focus-visible { outline: 2px solid white; outline-offset: 5px; }
+.contact-address { align-self: flex-start; margin-top: 1.5rem; font-size: clamp(1rem, 3vw, 1.5rem); overflow-wrap: anywhere; }
+.copy-status { min-height: 1.5em; margin: .5rem 0 0; font: 400 .875rem var(--kr); line-height: 1.6; color: var(--lime); }
+.contact-link { align-self: flex-start; margin-top: 1rem; padding: 1rem 0; border-bottom: 1px solid #758093; color: #bdc3cf; font-size: .875rem; letter-spacing: .08em; }
 .contact-link span { display: inline-block; margin-left: 2rem; font-size: 1.2rem; transition: transform .2s; }
 .contact-link:hover span { transform: translate(4px, -4px); }
 .contact-footer { display: flex; justify-content: space-between; margin-top: auto; padding-top: 4rem; color: #707987; font-size: .66rem; letter-spacing: .12em; }
