@@ -93,7 +93,7 @@ nav a:hover::after, nav a:focus-visible::after { right: 0; }
 .state-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 figure { margin: 0; }
 .state-compare figure { overflow: hidden; background: #eef2f7; border-radius: .3rem; }
-.state-compare img { aspect-ratio: 1.84; object-fit: cover; }
+.state-compare img { height: auto; }
 figcaption { font-family: var(--kr); font-size: .73rem; line-height: 1.5; }
 .state-compare figcaption { display: flex; gap: 1rem; padding: 1rem; color: var(--ink); }
 .state-compare figcaption span { color: var(--violet); font-weight: 800; }
@@ -110,13 +110,18 @@ figcaption { font-family: var(--kr); font-size: .73rem; line-height: 1.5; }
 .tag-list { display: flex; flex-wrap: wrap; gap: .55rem; padding: 2rem 0 0; margin: 3rem 0 0; border-top: 1px solid currentColor; list-style: none; }
 .tag-list li { padding: .55rem .85rem; border: 1px solid currentColor; border-radius: 999px; font-size: .68rem; letter-spacing: .05em; }
 
-.feature-visual { position: relative; overflow: hidden; height: min(68vw, 52rem); background: white; }
-.feature-visual img { height: 100%; object-fit: cover; object-position: top; }
-.feature-visual figcaption { position: absolute; left: 1rem; bottom: 1rem; padding: .7rem 1rem; color: white; background: var(--ink); }
-.padlet-grid { display: grid; grid-template-columns: 1.1fr .8fr 1fr; gap: 1rem; margin-top: 1rem; }
-.padlet-grid figure { display: flex; flex-direction: column; padding: 1rem; background: white; }
-.padlet-grid img { flex: 1; min-height: 14rem; max-height: 28rem; object-fit: cover; object-position: top; }
+.feature-visual { padding: clamp(1rem, 3vw, 2rem); background: white; }
+.feature-visual img { width: auto; max-width: 100%; height: auto; max-height: 78svh; margin-inline: auto; object-fit: contain; }
+.feature-visual figcaption { padding-top: 1rem; color: var(--ink); }
+.padlet-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem; align-items: start; }
+.padlet-grid figure { min-width: 0; padding: clamp(1rem, 2vw, 2rem); background: white; }
+.padlet-grid figure:last-child { grid-column: 2; grid-row: 1 / span 2; }
+.padlet-grid img { width: 100%; height: auto; }
 .padlet-grid figcaption { padding-top: 1rem; }
+.screenshot-link { display: block; cursor: zoom-in; }
+.screenshot-link span { display: block; margin-top: .75rem; padding: .6rem .8rem; text-align: right; color: var(--ink); background: #eef2f7; font-size: .875rem; line-height: 1.5; }
+.screenshot-link:hover span { background: var(--lime); }
+.screenshot-link:focus-visible { outline: 3px solid var(--violet); outline-offset: 4px; }
 .project-notes { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 4rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .project-notes div { display: flex; gap: 1.5rem; padding: 2rem 1rem; border-right: 1px solid var(--line); }
 .project-notes div:last-child { border-right: 0; }
@@ -205,8 +210,7 @@ figcaption { font-family: var(--kr); font-size: .73rem; line-height: 1.5; }
   .state-compare, .padlet-grid { grid-template-columns: 1fr; }
   .project-head { align-items: start; }
   .project-summary { max-width: none; }
-  .feature-visual { height: 105vw; max-height: 42rem; }
-  .padlet-grid img { max-height: 23rem; }
+  .padlet-grid figure:last-child { grid-column: auto; grid-row: auto; }
   .project-notes { grid-template-columns: 1fr; }
   .project-notes div { border-right: 0; border-bottom: 1px solid var(--line); }
   .project-notes div:last-child { border-bottom: 0; }
