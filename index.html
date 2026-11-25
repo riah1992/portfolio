@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="웹 퍼블리싱 실무를 기반으로 프론트엔드 개발로 확장하고 있는 주리아의 포트폴리오입니다." />
-  <meta property="og:title" content="주리아 | UI Publisher & Frontend Developer" />
-  <meta property="og:description" content="화면을 정확하게 구현하고, 데이터와 사용자 행동까지 연결합니다." />
-  <title>주리아 | UI Publisher & Frontend Developer</title>
+  <meta name="description" content="공공·교육 서비스 13개 프로젝트를 웹 표준·웹 접근성·반응형으로 구축하고 운영해 온 5년차 웹 퍼블리셔 주리아의 포트폴리오입니다." />
+  <meta property="og:title" content="주리아 | Web Publisher" />
+  <meta property="og:description" content="시안을 정확한 화면으로, 그 화면을 모두가 쓸 수 있게 만듭니다." />
+  <title>주리아 | Web Publisher</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -19,22 +19,30 @@
     <a class="wordmark" href="#top" aria-label="홈으로 이동">RIA<span>.</span></a>
     <nav aria-label="주요 메뉴">
       <a href="#about">소개</a>
-      <a href="#work">프로젝트</a>
-      <a href="#experience">경력</a>
+      <a href="#work">퍼블리싱</a>
+      <a href="#principles">작업 원칙</a>
+      <a href="#code">코드</a>
+      <a href="#dev">개발 경험</a>
       <a href="#contact">연락</a>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
-      <p class="eyebrow">UI PUBLISHER · FRONTEND DEVELOPER</p>
-      <h1>화면을 정확하게,<br /><em>경험은 자연스럽게.</em></h1>
+      <p class="eyebrow">WEB PUBLISHING · UI DEVELOPMENT</p>
+      <h1>시안을 화면으로,<br /><em>화면을 모두에게.</em></h1>
       <div class="hero-bottom">
-        <p>약 4년의 웹 퍼블리싱 실무를 바탕으로<br />데이터와 사용자 행동이 연결되는 화면을 만듭니다.</p>
-        <a class="round-link" href="#work" aria-label="프로젝트 보기">
+        <p>공공기관·교육 서비스의 홈페이지와 관리자 화면을<br />웹 표준·웹 접근성·반응형으로 구축하고 운영해 온 웹 퍼블리셔입니다.</p>
+        <a class="round-link" href="#work" aria-label="퍼블리싱 작업 보기">
           <span>WORK</span><span aria-hidden="true">↘</span>
         </a>
       </div>
+      <dl class="hero-stats">
+        <div><dt>경력</dt><dd>5<small>년차</small></dd></div>
+        <div><dt>퍼블리싱 프로젝트</dt><dd>13<small>건</small></dd></div>
+        <div><dt>공공·교육 사이트</dt><dd>9<small>건</small></dd></div>
+        <div><dt>통통통 연속 담당</dt><dd>2.7<small>년</small></dd></div>
+      </dl>
       <div class="hero-index" aria-hidden="true">
         <span>SEOUL · KR</span><span>PORTFOLIO 2026</span>
       </div>
@@ -43,136 +51,497 @@
     <section class="intro section" id="about">
       <div class="section-label"><span>01</span> ABOUT</div>
       <div class="intro-copy reveal">
-        <h2>디자인을 코드로 옮기는 일에서 시작해,<br />서비스의 흐름을 구현하는 개발자로.</h2>
+        <h2>보이는 화면은 정확하게,<br />보이지 않는 구조는 단단하게.</h2>
         <div class="intro-grid">
-          <p>교육·공공·커머스 서비스의 웹·모바일 화면을 구축하고 운영했습니다. 퍼블리셔 재직 기간에는 HTML과 CSS를 중심으로 레이아웃과 UI 완성도를 책임졌습니다.</p>
-          <p>2026년부터 JavaScript, Thymeleaf, Java, Spring Boot 환경에서 관리자 기능과 데이터 조건별 UI를 구현하며 프론트엔드 개발 영역으로 확장하고 있습니다.</p>
+          <p>2021년 12월부터 공공기관·교육 서비스 13개 프로젝트의 UI를 퍼블리싱했습니다. 전자정부프레임워크 기반 홈페이지와 관리자 화면을 시안과 어긋나지 않게 구현하고, 웹 표준·웹 접근성·반응형·크로스 브라우징 기준을 지키는 마크업을 기본으로 삼았습니다.</p>
+          <p>구축에서 끝나지 않고 운영 중인 기관 사이트의 수정 요청을 여러 곳에서 동시에 처리하며, 다른 사람이 고쳐도 깨지지 않는 구조를 고민해 왔습니다. 2026년부터는 SI사업팀에서 JSP·Thymeleaf 템플릿과 데이터 흐름까지 경험하고 있습니다.</p>
         </div>
+        <ul class="work-style" aria-label="일하는 방식">
+          <li>
+            <strong>기획·개발과의 소통</strong>
+            <p>기획팀과는 화면 의도와 예외 상황을, 개발팀과는 마크업 구조와 데이터가 들어갈 자리를 먼저 맞추고 작업을 시작합니다.</p>
+          </li>
+          <li>
+            <strong>다음 사람을 생각하는 작업</strong>
+            <p>내 결과물을 받는 부서가 무엇을 편하게 여길지 늘 먼저 생각합니다. 개발자가 바로 붙일 수 있는 구조를 기준으로 삼습니다.</p>
+          </li>
+          <li>
+            <strong>운영까지 책임지는 태도</strong>
+            <p>오픈 이후 유지보수 요청까지 고려해, 누가 수정해도 다른 화면이 깨지지 않도록 구조를 정리합니다.</p>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section class="projects section" id="work">
-      <div class="section-label"><span>02</span> SELECTED WORK</div>
+      <div class="section-label"><span>02</span> SELECTED PUBLISHING</div>
+      <p class="expand-lead reveal">디바이스와 사용자 유형이 여러 갈래로 나뉘는 교육 서비스부터, 정보량이 많은 공공·대학 홈페이지까지 직접 퍼블리싱하거나 디자인한 화면입니다. 화면 위에 마우스를 올리면 페이지 전체를 스크롤해 볼 수 있습니다.</p>
 
+      <!-- 통통통 -->
       <article class="project project-dark reveal">
         <div class="project-head">
           <div>
-            <p class="project-number">PROJECT 01 · COMMERCE ADMIN</p>
-            <h2>WIZ SHOP<br />MENU SYSTEM</h2>
+            <p class="project-number">대표작 01 · 교육 서비스 · 2023.06 — 2025.12</p>
+            <h2>통통통<br />서비스 개편</h2>
+            <dl class="contribution" aria-label="통통통 기여도">
+              <div><dt>디자인 기여</dt><dd><span class="bar" style="--v:50%"></span>50%</dd></div>
+            </dl>
           </div>
-          <p class="project-summary">계층형 관리자 메뉴를 구성하고 등록·수정, 입력 검증, 상태에 따른 UI 변화를 구현했습니다.</p>
+          <p class="project-summary">훈장마을 개편에 이어 대교에듀베이션 교육 서비스를 2년 7개월간 연속으로 맡았습니다. 학원용 PC 관리자, 학원용 모바일, 학부모용 모바일까지 메인뿐 아니라 원생관리·조회·등록·마이페이지 등 다수의 서브페이지까지, 사용자와 디바이스별로 다른 화면을 하나의 규칙으로 퍼블리싱했고, 화면 디자인에도 50% 기여했습니다.</p>
         </div>
 
-        <div class="state-compare">
-          <figure>
-            <img src="assets/wiz-group.png" alt="그룹 선택 시 URL 입력란이 비활성화된 관리자 메뉴 화면" loading="lazy" />
-            <figcaption><span>01</span> GROUP STATE — 하위 메뉴를 갖는 그룹 상태</figcaption>
+        <div class="device-showcase">
+          <figure class="browser-frame scroll-shot">
+            <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="shot"><img src="assets/pub/tong-pc-dashboard.jpg" alt="통통통 학원용 PC 대시보드 화면. 원생 현황, 수업 일정, 수납 현황 차트가 카드형으로 배치되어 있음" loading="lazy" /></div>
+            <figcaption><span>PC</span> 학원용 대시보드 — 카드형 위젯과 차트 영역</figcaption>
           </figure>
-          <figure>
-            <img src="assets/wiz-link.png" alt="링크 선택 시 URL 입력란이 활성화된 관리자 메뉴 화면" loading="lazy" />
-            <figcaption><span>02</span> LINK STATE — URL을 연결하는 링크 상태</figcaption>
-          </figure>
-        </div>
-
-        <div class="project-detail-grid">
-          <div class="detail-card">
-            <span class="detail-kicker">CHALLENGE</span>
-            <h3>복잡한 메뉴 상태를<br />명확한 규칙으로</h3>
-            <p>그룹·링크 유형과 사용 여부에 따라 입력 영역과 메뉴 스타일이 자연스럽게 달라지도록 화면 상태를 설계했습니다.</p>
+          <div class="phone-row">
+            <figure class="phone-frame scroll-shot">
+              <div class="shot"><img src="assets/pub/tong-m-academy.jpg" alt="통통통 학원용 모바일 원생관리 화면" loading="lazy" /></div>
+              <figcaption>학원용 모바일</figcaption>
+            </figure>
+            <figure class="phone-frame scroll-shot">
+              <div class="shot"><img src="assets/pub/tong-m-parent.jpg" alt="통통통 학부모용 모바일 메인 화면" loading="lazy" /></div>
+              <figcaption>학부모용 모바일</figcaption>
+            </figure>
           </div>
-          <figure class="toast-figure">
-            <img src="assets/wiz-toast.png" alt="메뉴명 필수 입력 검증 토스트 메시지" loading="lazy" />
-            <figcaption>필수값 검증과 즉각적인 사용자 피드백</figcaption>
-          </figure>
         </div>
 
-        <ul class="tag-list" aria-label="위즈샵 사용 기술">
-          <li>JavaScript</li><li>Thymeleaf</li><li>HTML</li><li>CSS</li><li>Spring Boot</li><li>MyBatis</li>
+        <div class="subpages">
+          <p class="subpages-title">메인만이 아니라, 다수의 서브페이지까지</p>
+          <ul class="subpage-strip" aria-label="통통통 서브페이지 예시">
+            <li class="scroll-shot"><div class="shot"><img src="assets/pub/tong-pc-students.jpg" alt="통통통 PC 원생관리 서브페이지" loading="lazy" /></div><span>PC · 원생관리</span></li>
+            <li class="scroll-shot"><div class="shot"><img src="assets/pub/tong-pc-search.jpg" alt="통통통 PC 조회 서브페이지" loading="lazy" /></div><span>PC · 조회</span></li>
+            <li class="scroll-shot"><div class="shot"><img src="assets/pub/tong-pc-form.jpg" alt="통통통 PC 등록폼 서브페이지" loading="lazy" /></div><span>PC · 등록폼</span></li>
+            <li class="scroll-shot is-m"><div class="shot"><img src="assets/pub/tong-m-search.jpg" alt="통통통 학원용 모바일 조회 서브페이지" loading="lazy" /></div><span>모바일 · 조회</span></li>
+            <li class="scroll-shot is-m"><div class="shot"><img src="assets/pub/tong-m-form.jpg" alt="통통통 학원용 모바일 등록폼 서브페이지" loading="lazy" /></div><span>모바일 · 등록폼</span></li>
+            <li class="scroll-shot is-m"><div class="shot"><img src="assets/pub/tong-m-mypage.jpg" alt="통통통 학부모용 모바일 마이페이지" loading="lazy" /></div><span>모바일 · 마이페이지</span></li>
+          </ul>
+        </div>
+
+        <ol class="phase-list" aria-label="통통통 단계별 작업">
+          <li>
+            <p class="phase-date">2023.06 — 2025.05</p>
+            <h3>서비스 개편</h3>
+            <p>PC·모바일 로그인, 웹·모바일 통합 로그인, 통합관리시스템 개설신청관리 화면</p>
+          </li>
+          <li>
+            <p class="phase-date">2025.05 — 2025.07</p>
+            <h3>유료화</h3>
+            <p>유료 서비스 전환에 필요한 화면</p>
+          </li>
+          <li>
+            <p class="phase-date">2025.11 — 2025.12</p>
+            <h3>상품구조 고도화</h3>
+            <p>디자인 시안을 받아 요금제, 부가서비스 신청, 결제정보 관리, 사업자 번호 검증 팝업 등 PC·모바일 화면 구현</p>
+          </li>
+        </ol>
+
+        <div class="plan-showcase">
+          <div class="plan-head">
+            <p class="subpages-title">상품구조 고도화 · 시안 구현 화면</p>
+            <a class="plan-link" href="https://riah1992.github.io/tongtongtong-publishing/" target="_blank" rel="noopener">퍼블리싱 페이지 목록 보기 <span aria-hidden="true">↗</span><span class="sr-only">(새 창)</span></a>
+          </div>
+          <div class="plan-grid">
+            <figure class="browser-frame scroll-shot">
+              <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+              <div class="shot"><img src="assets/pub/tong-plan-pc.jpg" alt="통통통 이용중인 요금제 화면. basic과 smart 요금제를 비교하는 카드와 정보수집 안내" loading="lazy" /></div>
+              <figcaption><span>PC</span> 이용중인 요금제</figcaption>
+            </figure>
+            <figure class="browser-frame scroll-shot">
+              <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+              <div class="shot"><img src="assets/pub/tong-addon-pc.jpg" alt="통통통 부가서비스 신청 및 관리 화면. 간편결제, 카드단말기, 키오스크 등 부가서비스 목록" loading="lazy" /></div>
+              <figcaption><span>PC</span> 부가서비스 신청 및 관리</figcaption>
+            </figure>
+            <figure class="phone-frame scroll-shot">
+              <div class="shot"><img src="assets/pub/tong-plan-m.jpg" alt="통통통 모바일 이용중인 요금제와 결제정보 등록 완료 화면" loading="lazy" /></div>
+              <figcaption>모바일 · 요금제·결제정보</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <ul class="tag-list" aria-label="통통통 키워드">
+          <li>UI 디자인</li><li>반응형</li><li>사용자 유형별 UI</li><li>공통 컴포넌트</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
         </ul>
       </article>
 
+      <!-- 경기도교육복지 -->
+      <article class="project project-paper reveal">
+        <div class="project-head">
+          <div>
+            <p class="project-number">대표작 02 · 공공기관 · 2022.12 — 2023.08</p>
+            <h2>경기도교육복지<br />종합센터</h2>
+          </div>
+          <p class="project-summary">경기도교육복지종합센터 홈페이지를 구축했습니다. 신청 메뉴, 공지, 행사 달력, 배너가 한 화면에 모이는 메인을 PC와 모바일에서 모두 계층이 읽히도록 구성하고, 공공기관 접근성 기준을 고려해 마크업했습니다.</p>
+        </div>
+
+        <div class="responsive-pair">
+          <figure class="browser-frame scroll-shot">
+            <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="shot"><img src="assets/pub/gew-pc.jpg" alt="경기도교육복지종합센터 PC 메인 화면" loading="lazy" /></div>
+            <figcaption><span>PC</span> 1920px 기준 메인</figcaption>
+          </figure>
+          <figure class="phone-frame scroll-shot">
+            <div class="shot"><img src="assets/pub/gew-m.jpg" alt="경기도교육복지종합센터 모바일 메인 화면" loading="lazy" /></div>
+            <figcaption>모바일 메인</figcaption>
+          </figure>
+        </div>
+
+        <ul class="tag-list" aria-label="경기도교육복지종합센터 키워드">
+          <li>공공 웹</li><li>웹 접근성</li><li>반응형</li><li>HTML</li><li>CSS</li><li>jQuery</li>
+        </ul>
+      </article>
+
+      <!-- 서울과기대: 시안 디자인·퍼블리싱 -->
       <article class="project project-light reveal">
         <div class="project-head">
           <div>
-            <p class="project-number">PROJECT 02 · BOARD BUILDER</p>
-            <h2>PADLET<br />BOARD</h2>
+            <p class="project-number">디자인·퍼블리싱 · 대학 · 2022.11</p>
+            <h2>서울과기대<br />산학협력단</h2>
           </div>
-          <p class="project-summary">관리자가 카드 배치와 카테고리를 설정하고 게시물을 등록·관리할 수 있는 게시판 모듈입니다.</p>
+          <p class="project-summary">서울과학기술대학교 산학협력단 홈페이지 구축에서 메인 시안을 디자인하고 그 시안을 직접 퍼블리싱했으며, 1차 시안으로 채택됐습니다. 최종 화면은 이후 디자인이 바뀌어 자사 CMS 빌더인 위즈빌더로 구축되었습니다.</p>
         </div>
 
-        <figure class="feature-visual">
-          <img src="assets/padlet-list.png" alt="패들릿 게시판 데이터 관리 목록 화면" loading="lazy" />
-          <figcaption>데이터 관리 · 검색 · 게시물 카드 목록</figcaption>
-        </figure>
-
-        <div class="padlet-grid">
-          <figure>
-            <img src="assets/padlet-layout.png" alt="패들릿 카드 레이아웃 설정 미리보기" loading="lazy" />
-            <figcaption>반응형 카드 배치 미리보기</figcaption>
+        <div class="state-compare compare-tall">
+          <figure class="scroll-shot">
+            <div class="shot"><img src="assets/pub/seoultech-design.jpg" alt="직접 디자인해 채택된 서울과학기술대학교 산학협력단 메인 1차 시안" loading="lazy" /></div>
+            <figcaption><span>시안</span> 직접 디자인·퍼블리싱한 1차 시안 · 채택 (2022.11)</figcaption>
           </figure>
-          <figure>
-            <img src="assets/padlet-category.png" alt="패들릿 카테고리 색상 설정 화면" loading="lazy" />
-            <figcaption>카테고리 생성 및 색상 설정</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/padlet-editor.png" alt="패들릿 게시물 등록과 썸네일 설정 화면" loading="lazy" />
-            <figcaption>게시물·썸네일·첨부파일 등록</figcaption>
+          <figure class="scroll-shot">
+            <div class="shot"><img src="assets/pub/seoultech-live.jpg" alt="위즈빌더로 구축된 서울과학기술대학교 산학협력단 최종 메인 화면" loading="lazy" /></div>
+            <figcaption><span>최종</span> 위즈빌더로 구축된 최종 페이지 (2023.03 캡처)</figcaption>
           </figure>
         </div>
 
-        <div class="project-notes">
-          <div><strong>01</strong><span>게시판 기본정보와<br />노출 옵션 설정</span></div>
-          <div><strong>02</strong><span>카테고리 및<br />카드 스타일 관리</span></div>
-          <div><strong>03</strong><span>게시물 CRUD와<br />데이터 관리 흐름</span></div>
-        </div>
-
-        <ul class="tag-list" aria-label="패들릿 게시판 사용 기술">
-          <li>Java</li><li>JSP</li><li>JavaScript</li><li>SQL</li><li>HTML</li><li>CSS</li>
+        <ul class="tag-list" aria-label="서울과학기술대학교 산학협력단 키워드">
+          <li>메인 시안 디자인</li><li>시안 퍼블리싱</li><li>시안 채택</li><li>대학 웹</li>
         </ul>
       </article>
-    </section>
 
-    <section class="experience section" id="experience">
-      <div class="section-label"><span>03</span> EXPERIENCE</div>
-      <div class="timeline">
-        <article class="timeline-row reveal">
-          <time>2026 — NOW</time>
-          <div><h3>Frontend · Application Development</h3><p>관리자 기능, JavaScript 상태 처리, Thymeleaf 기반 화면, Java·SQL 데이터 흐름</p></div>
-          <span class="timeline-mark">02</span>
+      <!-- 갤러리 -->
+      <div class="pub-gallery">
+        <article class="gallery-card reveal">
+          <figure class="scroll-shot">
+            <div class="shot"><img src="assets/pub/template-pc.jpg" alt="CMS 메인 템플릿 PC 화면. 전시 안내 콘텐츠가 들어간 예시" loading="lazy" /></div>
+          </figure>
+          <p class="project-number">템플릿 · CMS</p>
+          <h3>CMS 메인 템플릿</h3>
+          <p>자사 CMS에서 고객사가 골라 쓰는 메인 템플릿을 퍼블리싱했습니다. 콘텐츠가 바뀌어도 레이아웃이 유지되도록 영역 단위로 구조를 나눴습니다.</p>
         </article>
-        <article class="timeline-row reveal">
-          <time>2021 — 2026</time>
-          <div><h3>Web Publisher · UI Development</h3><p>교육·공공 서비스의 웹·모바일 퍼블리싱, 반응형 레이아웃, UI 구축 및 유지보수</p></div>
-          <span class="timeline-mark">01</span>
+        <article class="gallery-card reveal">
+          <figure class="scroll-shot">
+            <div class="shot"><img src="assets/pub/namyang.jpg" alt="남양고진공 기업 홈페이지 메인 화면" loading="lazy" /></div>
+          </figure>
+          <p class="project-number">기업 · 메인 페이지</p>
+          <h3>남양고진공 기업 홈페이지</h3>
+          <p>제조기업 홈페이지 메인을 퍼블리싱했습니다. 풀스크린 비주얼, 제품·설비 소개, 문의 폼까지 한 페이지 흐름으로 구성했습니다.</p>
         </article>
       </div>
 
-      <div class="project-archive reveal">
-        <p>ADDITIONAL EXPERIENCE</p>
-        <ul>
-          <li><span>통통통 서비스 개편</span><span>교육 서비스 · 장기 운영</span></li>
-          <li><span>훈장마을 서비스 개편</span><span>웹·앱 UI 퍼블리싱</span></li>
-          <li><span>경기도교육복지종합센터</span><span>공공기관 홈페이지 구축</span></li>
-          <li><span>오산교육재단 진로진학정보</span><span>교육기관 페이지 구축</span></li>
-          <li><span>KOTRA 서울푸드</span><span>행사 홈페이지 구축</span></li>
-        </ul>
+      <!-- 나머지 목록 -->
+      <div class="section-label expand-label"><span>03</span> MORE PUBLISHING</div>
+      <article class="pub-board reveal">
+        <div class="pub-list">
+          <article class="pub-item">
+            <div class="pub-meta"><span>01</span><span>2023.04 — 2023.06 · 대교 · 웹/앱 UI</span></div>
+            <h3>훈장마을 서비스 개편</h3>
+            <p>대교의 교육 서비스로, 통통통을 맡기 직전에 진행한 개편입니다. 웹과 앱 UI 퍼블리싱을 함께 진행했습니다. 디자이너에게 전달받은 시안을 기준으로 간격·타이포·컴포넌트 상태를 맞춰 구현하고, 개편 구간에서도 기존 서비스 톤이 어긋나지 않도록 맞췄습니다.</p>
+            <ul class="tag-list" aria-label="훈장마을 키워드"><li>웹·앱 퍼블리싱</li><li>컴포넌트</li><li>시안 구현</li></ul>
+          </article>
+          <article class="pub-item">
+            <div class="pub-meta"><span>02</span><span>2022.07 — 2022.11 · 교육기관</span></div>
+            <h3>오산교육재단 진로진학정보</h3>
+            <p>교육기관 정보 페이지를 구축했습니다. 콘텐츠 블록 단위로 구조를 잡아 수정·확장이 쉬운 마크업을 목표로 작업했습니다.</p>
+            <ul class="tag-list" aria-label="오산교육재단 키워드"><li>교육기관</li><li>콘텐츠 페이지</li><li>유지보수</li></ul>
+          </article>
+          <article class="pub-item">
+            <div class="pub-meta"><span>03</span><span>2022.05 — 2022.12 · 공공기관</span></div>
+            <h3>항공안전기술원 드론정보포털</h3>
+            <p>운영 중인 포털에 드론 용어사전 페이지, 뉴스레터, 아이디·비밀번호 찾기 메일 폼을 퍼블리싱했습니다. 메일 폼은 메일 클라이언트마다 다른 렌더링을 고려해 테이블 기반으로 작성했습니다.</p>
+            <ul class="tag-list" aria-label="드론정보포털 키워드"><li>콘텐츠 페이지</li><li>HTML 이메일</li><li>뉴스레터</li></ul>
+          </article>
+          <article class="pub-item">
+            <div class="pub-meta"><span>04</span><span>2021.12 — 2022.01 · 행사</span></div>
+            <h3>KOTRA 서울푸드</h3>
+            <p>행사 홈페이지를 구축했습니다. 일정·홍보 중심의 랜딩 구조를 빠르게 구현하고, 다양한 해상도에서 주요 정보가 우선 보이도록 배치했습니다.</p>
+            <ul class="tag-list" aria-label="KOTRA 서울푸드 키워드"><li>행사 사이트</li><li>랜딩</li><li>반응형</li></ul>
+          </article>
+        </div>
+
+        <div class="project-archive">
+          <p>유지보수 · 4건</p>
+          <div>
+            <p class="archive-lead">운영 중인 기관 홈페이지의 화면 수정·UI 개선 요청을 여러 곳에서 동시에 처리했습니다.</p>
+            <ul>
+              <li><span>군포의왕교육지원청</span><span>2025.04 — 06</span></li>
+              <li><span>경기과학고등학교</span><span>2023.06 — 07</span></li>
+              <li><span>한국스마트의료기기</span><span>2022.06 — 11</span></li>
+              <li><span>한국지방재정공제회</span><span>2021.12 — 2022.02</span></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="principles section" id="principles">
+      <div class="section-label"><span>04</span> HOW I PUBLISH</div>
+      <h2 class="principles-title reveal">퍼블리싱에서<br />놓치지 않는 기준.</h2>
+      <ol class="principle-list">
+        <li class="reveal">
+          <span class="principle-no">01</span>
+          <h3>웹 표준 · 시맨틱 마크업</h3>
+          <p>header·nav·main·section 같은 구조 태그와 제목 위계를 먼저 잡고 스타일을 입힙니다. 화면이 바뀌어도 문서 구조는 흔들리지 않게 합니다.</p>
+        </li>
+        <li class="reveal">
+          <span class="principle-no">02</span>
+          <h3>웹 접근성</h3>
+          <p>공공기관 사이트 기준에 맞춰 대체 텍스트, 건너뛰기 링크, 키보드 초점, 명도 대비, 표·폼의 레이블을 챙깁니다.</p>
+        </li>
+        <li class="reveal">
+          <span class="principle-no">03</span>
+          <h3>반응형 · 디바이스 대응</h3>
+          <p>PC 관리자와 모바일 사용자 화면이 함께 있는 서비스를 오래 맡으며, 같은 컴포넌트가 화면 폭과 사용자 유형에 따라 자연스럽게 바뀌도록 설계했습니다.</p>
+        </li>
+        <li class="reveal">
+          <span class="principle-no">04</span>
+          <h3>크로스 브라우징</h3>
+          <p>공공 사이트 특성상 다양한 브라우저와 해상도를 점검하고, HTML 이메일처럼 렌더링 환경이 제한된 곳은 그에 맞는 방식으로 작성합니다.</p>
+        </li>
+        <li class="reveal">
+          <span class="principle-no">05</span>
+          <h3>운영을 견디는 CSS 구조</h3>
+          <p>CMS 템플릿과 공통 위젯처럼 여러 사이트에서 재사용되는 화면은 영역별로 클래스를 나눠, 다른 사람이 고쳐도 다른 곳이 깨지지 않게 합니다.</p>
+        </li>
+        <li class="reveal">
+          <span class="principle-no">06</span>
+          <h3>개발과의 연결</h3>
+          <p>JSP·Thymeleaf 템플릿에 직접 마크업을 붙이고 데이터 흐름까지 이해하기 때문에, 퍼블리싱 결과물이 개발 단계에서 다시 바뀌는 일을 줄입니다.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="code section" id="code">
+      <div class="section-label"><span>05</span> CODE</div>
+      <p class="expand-lead dev-lead reveal">실제 작업에서 가져온 코드 일부입니다. 회사 프레임워크 코드는 빼고, 직접 작성한 부분만 줄여서 옮겼습니다.</p>
+      <div class="code-grid">
+        <article class="code-card code-card-wide reveal">
+          <div class="code-meta"><span>01</span><span>통통통 · css/mngr_component.css</span></div>
+          <h3>통통통 · CSS 변수와 상태 클래스로 만든 공통 컴포넌트</h3>
+          <p>수백 개의 화면이 같은 규칙을 쓰도록 색상과 글자 크기를 CSS 변수로 모았습니다. 출결·수강·원생 상태는 opt- 클래스 하나로 색이 정해지고, 작은 모바일에서는 변수 값만 바꿔 화면 전체의 글자 크기를 조정합니다.</p>
+          <div class="code-pair">
+            <pre tabindex="0"><code>:root {
+  /* Color */
+  --pc-bora-7: #5647B3;
+  --pc-bora-8: #9d93c1;
+  --pc-red: #dd346d;
+  /* Font */
+  --pc-text-h1: 36px;
+  --pc-text-h2: 24px;
+}
+
+/* 옵션 상태: 상태 이름만 붙이면 색이 정해짐 */
+[class^=&quot;opt-&quot;] { font-weight: var(--text-medium); font-size: var(--pc-fs13); }
+
+/* 출결 상태 */
+.opt-attend { color: var(--pc-bora-7)!important; }  /* 출석 */
+.opt-absent { color: var(--pc-red)!important; }     /* 결석 */
+.opt-late   { color: var(--pc-bora-6)!important; }  /* 지각 */
+
+/* 수강 상태 */
+.opt-end    { color: var(--pc-red)!important; }     /* 종강 */
+.opt-course { color: var(--pc-bora-7)!important; }  /* 수강 */</code></pre>
+            <pre tabindex="0"><code>@media only screen and (max-width: 767px) {
+  .fs14 { font-size: var(--m-fs14)!important; }
+  .fs15 { font-size: var(--m-fs15)!important; }
+}
+
+/* 작은 기기에서는 변수 값만 바꿔 전체 글자 크기를 조정 */
+@media only screen and (max-width: 375px) {
+  :root { --m-fs15: 14px; --m-fs14: 13px; }
+  .m-academy-mngr-Wrap .m-graph-box { flex-wrap: wrap; flex-direction: column; }
+}
+@media only screen and (max-width: 300px) {
+  :root { --m-fs13: 12px; }
+  .m-academy-mngr-Wrap .label-set select { width: 100%; }
+  .m-academy-mngr-Wrap .check-list.col3 li { width: 49%; }
+}</code></pre>
+          </div>
+        </article>
+        <article class="code-card reveal">
+          <div class="code-meta"><span>02</span><span>퍼블리싱/style.css</span></div>
+          <h3>CMS 메인 템플릿 · 반응형 CSS</h3>
+          <p>메인 비주얼을 해상도 구간별로 나눠 높이·타이포·이미지 크롭을 따로 잡았습니다. 슬라이드 높이와 카피 크기가 화면 폭에 맞춰 단계적으로 줄어듭니다.</p>
+          <pre tabindex="0"><code>.mainVisual .mainSlider_001 {
+  overflow:hidden; position:relative; height:455px;
+  border-radius:30px 30px 0 30px;
+}
+
+@media (min-width:700px) and (max-width:990px) {
+  .mainVisual .mainSlider_001 {height:400px;}
+  .mainVisual .copy .tit {font-size:27px;}
+  .mainVisual .copy .tit b {font-size:30px;}
+}
+@media (max-width:799px) {
+  .mainVisual {width:100%; padding:0 10px;}
+  .mainVisual .mainSlider_001 {height:250px;}
+  .mainVisual .swiper-slide .imgbox img {
+    max-width:120%; max-height:none; width:auto;
+  }
+  .mainVisual .copy .tit {font-size:15px; font-weight:300;}
+}</code></pre>
+        </article>
+        <article class="code-card reveal">
+          <div class="code-meta"><span>03</span><span>드론정보포털/드론용어사전</span></div>
+          <h3>드론 용어사전 · 탭 마크업과 초점 표시</h3>
+          <p>초성 탭은 클릭과 키보드 모두 쓸 수 있도록 button으로 마크업하고, 초점이 보이도록 outline을 살렸습니다. 모바일에서는 탭 너비를 줄여 한 줄에 4개씩 배치합니다.</p>
+          <pre tabindex="0"><code>&lt;ul class=&quot;wztab-list drone_index&quot;&gt;
+  &lt;li class=&quot;wztab-item&quot;&gt;&lt;button type=&quot;button&quot;&gt;전체&lt;/button&gt;&lt;/li&gt;
+  &lt;li class=&quot;wztab-item&quot;&gt;&lt;button type=&quot;button&quot;&gt;가&lt;/button&gt;&lt;/li&gt;
+  &lt;li class=&quot;wztab-item&quot;&gt;&lt;button type=&quot;button&quot;&gt;나&lt;/button&gt;&lt;/li&gt;
+  &lt;!-- ... --&gt;
+  &lt;li class=&quot;wztab-item&quot;&gt;&lt;button type=&quot;button&quot;&gt;A~Z&lt;/button&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+div.drone_term .drone_index li.wztab-item button:focus {outline:auto;}
+
+@media (max-width:599px) {
+  div.drone_term .drone_index li.wztab-item {width:22%;}
+  div.drone_term .drone_index li.wztab-item button {padding:0 10px;}
+}</code></pre>
+        </article>
+        <article class="code-card reveal">
+          <div class="code-meta"><span>04</span><span>드론정보포털/mailForm</span></div>
+          <h3>아이디·비밀번호 찾기 · HTML 메일</h3>
+          <p>메일 프로그램은 외부 CSS와 최신 레이아웃을 지원하지 않는 경우가 많아, table 레이아웃과 인라인 스타일로 고정 폭(600px) 메일을 만들었습니다.</p>
+          <pre tabindex="0"><code>&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;width:600px!important;&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;padding:30px 50px;&quot;&gt;
+        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;width:500px;&quot;&gt;
+          &lt;tr&gt;
+            &lt;td style=&quot;font-size:20px; line-height:25px; color:#333;
+                       font-weight:600; padding-bottom:10px;&quot;&gt;ID 찾기 결과 확인&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td style=&quot;font-size:18px; line-height:25px;&quot;&gt;
+              회원님께서 가입 당시 등록한 아이디는
+              &lt;b style=&quot;color:#1958bd;&quot;&gt;honggildong&lt;/b&gt;입니다.
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </article>
+        <article class="code-card reveal">
+          <div class="code-meta"><span>05</span><span>위젯작업/screenMngr.css</span></div>
+          <h3>위젯 편집 모드 · hover와 focus를 같게</h3>
+          <p>편집 가능한 영역을 마우스뿐 아니라 키보드 초점으로도 알아볼 수 있도록 :hover와 :focus에 같은 표시를 주고, 깜빡이는 outline으로 선택 영역을 강조했습니다.</p>
+          <pre tabindex="0"><code>.layout_line_border:hover,
+.layout_line_border:focus {
+  outline:2px solid #121212; z-index:3 !important;
+  box-sizing:border-box; position:relative;
+  animation:twinklefx 1s infinite linear alternate-reverse;
+}
+.head-group:focus, .footer:focus {
+  outline:2px solid #121212; z-index:2;
+  animation:twinklefx 1s infinite linear alternate-reverse;
+}</code></pre>
+        </article>
+      </div>
+    </section>
+
+    <section class="dev section" id="dev">
+      <div class="section-label"><span>06</span> BEYOND PUBLISHING</div>
+      <p class="expand-lead dev-lead reveal">2026년 2월부터 SI사업팀에서 자사 솔루션의 화면과 기능을 함께 만들고 있습니다. 퍼블리싱 기본기를 바탕으로 상태에 따라 바뀌는 UI와 데이터 연동까지 다룬 작업입니다.</p>
+
+      <div class="dev-grid">
+        <article class="dev-card reveal">
+          <figure class="dev-shot"><img src="assets/wiz-link.png" alt="링크 선택 시 URL 입력란이 활성화된 위즈샵 관리자 메뉴 화면" loading="lazy" /></figure>
+          <p class="project-number">쇼핑몰 관리자 · 2026.03 — 04</p>
+          <h3>위즈샵 관리자 메뉴</h3>
+          <p>그룹·링크 유형과 사용 여부에 따라 입력 영역과 스타일이 바뀌는 계층형 메뉴 화면, 필수값 검증과 토스트 피드백을 구현했습니다.</p>
+          <ul class="tag-list"><li>Thymeleaf</li><li>JavaScript</li><li>CSS</li></ul>
+        </article>
+        <article class="dev-card reveal">
+          <figure class="dev-shot dev-shot-center"><img src="assets/padlet-cards.jpg" alt="패들릿 게시판 사용자 화면. 썸네일, 카테고리 라벨, 작성 정보가 들어간 카드 3개가 슬라이드형으로 배치됨" loading="lazy" /></figure>
+          <p class="project-number">게시판 빌더 · 2026.05 — 06</p>
+          <h3>패들릿 게시판 모듈</h3>
+          <p>카드 배치·카테고리 색상을 설정하는 반응형 카드형 게시판을 화면부터 DB 연동까지 개발했습니다.</p>
+          <ul class="tag-list"><li>JSP</li><li>JavaScript</li><li>SQL</li></ul>
+        </article>
+        <article class="dev-card dev-card-text reveal">
+          <p class="project-number">CMS 고도화 · 2026.07 — 현재</p>
+          <h3>위즈빌더 고도화</h3>
+          <p>콘텐츠·게시판 모듈을 JSP에서 Thymeleaf로 전환하고, 관리자 화면·팝업을 새 템플릿으로 옮기고 있습니다.</p>
+          <p class="project-number dev-sub">위젯 · 2026.05</p>
+          <h3>위젯 모바일 비노출</h3>
+          <p>우클릭 메뉴로 위젯마다 모바일 노출 여부를 설정하는 기능을 만들고, 반복 로직을 공통 함수로 정리했습니다.</p>
+          <ul class="tag-list"><li>Java</li><li>Thymeleaf</li><li>jQuery</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience section" id="experience">
+      <div class="section-label"><span>07</span> EXPERIENCE</div>
+      <p class="experience-company">(주)위즈위그 · 2021.12 — 현재</p>
+      <div class="timeline">
+        <article class="timeline-row reveal">
+          <time>2026.02 — 현재</time>
+          <div><h3>UI 개발 &amp; 기능 개발</h3><p>SI사업팀 · 대리<br />자사 CMS 위즈빌더·쇼핑몰 위즈샵의 화면과 기능 개발<br />JSP→Thymeleaf 템플릿 전환, 관리자 UI 개선</p></div>
+          <span class="timeline-mark">01</span>
+        </article>
+        <article class="timeline-row reveal">
+          <time>2021.12 — 2026.01</time>
+          <div><h3>웹 디자인 · 퍼블리싱 · UI/UX 개발</h3><p>기획/디자인팀<br />교육·공공·행사 서비스 13개 프로젝트의 UI 디자인·구축, 개편 및 유지보수<br />전자정부프레임워크 환경에서 웹 표준·접근성·반응형 퍼블리싱</p></div>
+          <span class="timeline-mark">02</span>
+        </article>
       </div>
     </section>
 
     <section class="skills section">
-      <div class="section-label"><span>04</span> CAPABILITIES</div>
-      <div class="skill-cloud reveal" aria-label="보유 기술">
-        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive UI</span><span>Thymeleaf</span><span>Java</span><span>Spring Boot</span><span>MyBatis</span><span>SQL</span><span>Git</span><span>eXBuilder6</span>
+      <div class="section-label"><span>08</span> CAPABILITIES</div>
+      <div class="skill-groups">
+        <div class="skill-group reveal">
+          <h3>PUBLISHING</h3>
+          <div class="skill-cloud" aria-label="퍼블리싱 역량">
+            <span>HTML5</span><span>CSS3</span><span>Semantic Markup</span><span>Web Accessibility</span><span>Responsive Web</span><span>Cross-browsing</span><span>HTML Email</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>INTERACTION · TEMPLATE</h3>
+          <div class="skill-cloud" aria-label="인터랙션·템플릿 기술">
+            <span>JavaScript</span><span>jQuery</span><span>JSP</span><span>Thymeleaf</span><span>eGovFrame</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>TOOLS · COLLABORATION</h3>
+          <div class="skill-cloud" aria-label="협업·도구">
+            <span>Photoshop</span><span>Illustrator</span><span>Git</span><span>AI Dev Tools</span>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <section class="credentials section">
+      <div class="section-label"><span>09</span> EDUCATION &amp; CERTIFICATE</div>
+      <ul class="cred-list">
+        <li class="reveal"><span class="cred-type">자격</span><strong>웹디자인개발기능사</strong><span class="cred-sub">한국산업인력공단</span><time>2022.04</time></li>
+        <li class="reveal"><span class="cred-type">교육</span><strong>프론트엔드 과정</strong><span class="cred-sub">강남IT아카데미 · HTML, CSS, JavaScript, jQuery</span><time>2021.09 — 10</time></li>
+        <li class="reveal"><span class="cred-type">교육</span><strong>스마트기기 UI/UX디자인 (반응형 웹&amp;앱)</strong><span class="cred-sub">그린컴퓨터학원 · 기획부터 시안, 코딩까지 웹사이트 제작 전 과정</span><time>2019.08 — 2020.01</time></li>
+        <li class="reveal"><span class="cred-type">학력</span><strong>덕성여자대학교 패션디자인학 졸업</strong><span class="cred-sub">부전공 불어불문학</span><time>2014.03 — 2016.02</time></li>
+      </ul>
     </section>
 
     <section class="contact" id="contact">
       <p class="eyebrow">LET'S WORK TOGETHER</p>
-      <h2>좋은 화면은<br /><em>좋은 흐름</em>에서 시작됩니다.</h2>
-      <a class="contact-link" href="https://github.com/riahjoo" target="_blank" rel="noreferrer">
-        GITHUB 방문하기 <span aria-hidden="true">↗</span>
+      <h2>정확한 화면,<br /><em>누구나 쓰는 웹.</em></h2>
+      <a class="contact-link" href="mailto:jrjuria92@naver.com" aria-label="jrjuria92@naver.com으로 이메일 보내기">
+        jrjuria92@naver.com <span aria-hidden="true">↗</span>
       </a>
-      <div class="contact-footer"><span>JOO RIA · 2026</span><a href="#top">BACK TO TOP ↑</a></div>
+      <div class="contact-footer"><span>JOO RIAH · 2026</span><a href="#top">BACK TO TOP ↑</a></div>
     </section>
   </main>
 
