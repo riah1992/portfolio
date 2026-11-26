@@ -509,3 +509,8 @@ figcaption { font-family: var(--kr); font-size: .73rem; line-height: 1.5; }
 .contribution div { grid-template-columns: 7rem 1fr; }
 .contribution-note { margin: .8rem 0 0; color: #aeb6c3; font-family: var(--kr); font-size: .8rem; }
 .plan-note { margin: -.5rem 0 1.25rem; font-size: .88rem; }
+.contribution div + div { margin-top: .6rem; }
+.contribution.on-light dt { color: #59606a; }
+.contribution.on-light dd { color: var(--violet); }
+.contribution.on-light .bar { background: rgba(16,23,34,.12); }
+.contribution.on-light .bar::before { background: var(--violet); }
