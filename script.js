@@ -40,7 +40,4 @@ if (toTop) {
   const toggleToTop = () => toTop.classList.toggle('is-visible', window.scrollY > window.innerHeight * 0.6);
   window.addEventListener('scroll', toggleToTop, { passive: true });
   toggleToTop();
-  toTop.addEventListener('click', () => {
-    setTimeout(() => document.querySelector('.skip-link')?.focus({ preventScroll: true }), 0);
-  });
 }
