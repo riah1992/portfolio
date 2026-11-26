@@ -514,3 +514,13 @@ figcaption { font-family: var(--kr); font-size: .73rem; line-height: 1.5; }
 .contribution.on-light dd { color: var(--violet); }
 .contribution.on-light .bar { background: rgba(16,23,34,.12); }
 .contribution.on-light .bar::before { background: var(--violet); }
+/* unified contribution badge (same look on dark and light backgrounds) */
+.contribution, .contribution.on-light { display: inline-block; min-width: 17rem; max-width: 22rem; margin: 1.75rem 0 0; padding: .9rem 1.1rem; background: #fff; border: 1px solid rgba(16,23,34,.12); border-radius: .5rem; box-shadow: 0 .5rem 1.5rem rgba(16,23,34,.12); }
+.contribution div { display: grid; grid-template-columns: 6.5rem 1fr; align-items: center; gap: .8rem; }
+.contribution div + div { margin-top: .55rem; }
+.contribution dt, .contribution.on-light dt { color: #59606a; font-family: var(--kr); font-size: .74rem; font-weight: 700; letter-spacing: 0; }
+.contribution dd, .contribution.on-light dd { display: flex; align-items: center; gap: .7rem; margin: 0; color: var(--ink); font-size: .82rem; font-weight: 700; }
+.contribution .bar, .contribution.on-light .bar { position: relative; flex: 1; height: .4rem; background: #e6e8ee; border-radius: 999px; overflow: hidden; }
+.contribution .bar::before, .contribution.on-light .bar::before { content: ""; position: absolute; inset: 0 auto 0 0; width: var(--v); background: var(--violet); border-radius: 999px; }
+.gallery-card .contribution, .eims-showcase .contribution { display: block; margin: 0 0 1rem; box-shadow: none; }
+.eims-showcase .contribution { display: inline-block; margin: 0 0 1.25rem; box-shadow: 0 .5rem 1.5rem rgba(16,23,34,.12); }
