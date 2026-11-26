@@ -54,7 +54,7 @@
         <h2>보이는 화면은 정확하게,<br />보이지 않는 구조는 단단하게.</h2>
         <div class="intro-grid">
           <p>2021년 12월부터 공공기관·교육 서비스 13개 프로젝트의 UI를 퍼블리싱했습니다. 전자정부프레임워크 기반 홈페이지와 관리자 화면을 시안과 어긋나지 않게 구현하고, 웹 표준·웹 접근성·반응형·크로스 브라우징 기준을 지키는 마크업을 기본으로 삼았습니다.</p>
-          <p>구축에서 끝나지 않고 운영 중인 기관 사이트의 수정 요청까지 맡으며, 다른 사람이 고쳐도 깨지지 않는 구조를 고민해 왔습니다. 2026년부터는 SI사업팀에서 JSP·Thymeleaf 템플릿과 데이터 흐름까지 경험하고 있습니다.</p>
+          <p>구축에서 끝나지 않고 운영 중인 기관 사이트의 수정 요청까지 맡으며, 다른 사람이 고쳐도 깨지지 않는 구조를 고민해 왔습니다. 2026년부터는 SI사업팀에서 JSP·Thymeleaf 템플릿과 데이터 흐름까지 경험하고 있습니다. 최근에는 AI 도구를 활용해 기획, 디자인, 퍼블리싱, 개발을 한 흐름으로 진행하고 있습니다.</p>
         </div>
         <ul class="work-style" aria-label="일하는 방식">
           <li>
@@ -249,27 +249,6 @@
           <li>메인 시안 디자인</li><li>시안 퍼블리싱</li><li>시안 채택</li><li>대학 웹</li>
         </ul>
       </article>
-
-      <!-- 갤러리 -->
-      <div class="pub-gallery">
-        <article class="gallery-card reveal">
-          <figure class="scroll-shot">
-            <div class="shot"><img src="assets/pub/template-pc.jpg" alt="위즈빌더 메인 템플릿 PC 화면. 전시 안내 콘텐츠가 들어간 예시" loading="lazy" /></div>
-          </figure>
-          <p class="project-number">자사 웹빌더 · 템플릿 · 팀 작업 중 직접 제작분</p>
-          <h3>위즈빌더 메인 템플릿</h3>
-          <p>팀에서 꾸준히 만들어 온 위즈빌더 메인 템플릿 중 일부를 직접 디자인하고 구현했습니다. 고객사가 콘텐츠를 바꿔 넣어도 레이아웃이 유지되도록 영역 단위로 구조를 나눴습니다.</p>
-        </article>
-        <article class="gallery-card reveal">
-          <figure class="widget-shots">
-            <img src="assets/pub/widget-slide.jpg" alt="위즈빌더 인물 소개 슬라이드 위젯. 원형 사진과 이름, 소개 문구가 들어간 카드 4개" loading="lazy" />
-            <img src="assets/pub/widget-locnav.gif" alt="위즈빌더 위치 표시 메뉴 위젯. 펼쳐지는 하위 메뉴 목록" loading="lazy" />
-          </figure>
-          <p class="project-number">자사 웹빌더 · 위젯 · 팀 작업 중 직접 제작분</p>
-          <h3>위즈빌더 위젯</h3>
-          <p>팀에서 함께 만들어 온 위젯 가운데 슬라이드 배너, 위치 표시 메뉴 같은 위젯을 직접 디자인하고 구현했습니다. 여러 사이트에 들어가도 깨지지 않도록 위젯마다 스타일 범위를 나눴습니다.</p>
-        </article>
-      </div>
 
       <!-- 나머지 목록 -->
       <div class="section-label expand-label"><span>03</span> MORE PUBLISHING</div>
@@ -484,12 +463,68 @@ div.drone_term .drone_index li.wztab-item button:focus {outline:auto;}
 .h-button-l  { height: 54px; line-height: 54px; font-size: var(--text-subtitle2);
                font-weight: var(--text-medium); }</code></pre>
         </article>
+        <article class="code-card reveal">
+          <div class="code-meta"><span>06</span><span>게시판 에디터 · TOOLBAR_SPEC.md</span></div>
+          <h3>게시판 에디터 · AI에 넘긴 디자인 스펙</h3>
+          <p>직접 정한 디자인 토큰과 버튼 상태 규칙을 문서로 만들어 AI 코딩 도구에 전달했습니다. 접근성 속성까지 규칙에 넣어 구현 결과가 디자인과 어긋나지 않게 했습니다.</p>
+          <pre tabindex="0"><code>:root {
+  --tb-border: #E3E6EB;     /* 툴바 테두리, 구분선 */
+  --btn-size: 32px;         /* 아이콘 버튼 32×32 */
+  --btn-radius: 7px;
+  --icon: #3F4654;          /* 기본 */
+  --bg-hover: #F1F3F6;
+  --icon-active: #1A56DB;   /* 적용됨 (예: 굵게 켜짐) */
+  --bg-active: #E8F0FE;
+  --icon-disabled: #B4BAC4;
+  --focus-ring: #1A56DB;    /* 2px, offset 1px, :focus-visible */
+}
+
+/* 상태          배경            아이콘 색
+   기본          투명            --icon
+   호버          --bg-hover      --icon-hover
+   활성(적용됨)  --bg-active     --icon-active
+   포커스        2px 링 --focus-ring
+   비활성        투명            --icon-disabled
+   - 토글 버튼(B/I/U/S)은 aria-pressed
+   - 아이콘 전용 버튼은 aria-label 필수, SVG는 aria-hidden=&quot;true&quot; */</code></pre>
+        </article>
       </div>
     </section>
 
     <section class="dev section" id="dev">
       <div class="section-label"><span>06</span> BEYOND PUBLISHING</div>
       <p class="expand-lead dev-lead reveal">2026년 2월부터 SI사업팀에서 자사 솔루션의 화면과 기능을 함께 만들고 있습니다. 퍼블리싱 기본기를 바탕으로 상태에 따라 바뀌는 UI와 데이터 연동까지 다룬 작업입니다.</p>
+
+      <article class="ai-feature reveal">
+        <div class="ai-head">
+          <div>
+            <p class="project-number">최근 작업 · 게시판 에디터 · 2026.10 — 현재</p>
+            <h3>AI와 함께 기획부터 개발까지,<br />게시판 에디터 리뉴얼</h3>
+            <dl class="contribution" aria-label="게시판 에디터 기여도">
+              <div><dt>기획·디자인</dt><dd><span class="bar" style="--v:100%"></span>100%</dd></div>
+              <div><dt>퍼블리싱·개발</dt><dd><span class="bar" style="--v:100%"></span>100%</dd></div>
+            </dl>
+          </div>
+          <p class="ai-summary">위즈빌더 게시판의 기존 에디터(SmartEditor 2)를 Tiptap 기반 에디터로 바꾸는 작업입니다. 기획 문서, 화면 디자인, 퍼블리싱, 기능 개발까지 혼자 맡아 AI 도구를 단계마다 활용하며 진행하고 있습니다.</p>
+        </div>
+
+        <ol class="ai-flow" aria-label="AI 활용 작업 흐름">
+          <li><span>01</span><strong>기획</strong><p>툴바 25개 기능과 표·링크·특수기호 창의 구조를 문서로 정리</p></li>
+          <li><span>02</span><strong>디자인</strong><p>AI로 HTML 목업을 여러 버전 만들어 비교하고, 아이콘 세트와 버튼 상태 가이드 확정</p></li>
+          <li><span>03</span><strong>핸드오프</strong><p>디자인 토큰, 아이콘 매핑, 상태 규칙을 스펙 문서로 정리해 AI 코딩 도구(Cursor)에 전달</p></li>
+          <li><span>04</span><strong>퍼블리싱·개발</strong><p>Thymeleaf 템플릿과 JS로 구현하고, 사이트 CSS와 충돌하지 않도록 Shadow DOM으로 분리</p></li>
+          <li><span>05</span><strong>점검</strong><p>axe 자동 접근성 검사 경고 0건, 키보드 초점·스크린리더 이름, 최신 브라우저 확인</p></li>
+        </ol>
+
+        <div class="ai-shots">
+          <figure class="ai-shot ai-shot-wide"><img src="assets/pub/editor-toolbar.jpg" alt="새 에디터 툴바. 실행 취소, 글꼴, 굵게·기울임, 목록, 링크, 표, 이미지스토어, 찾기 버튼이 한 줄로 배치됨" loading="lazy" /><figcaption>한 줄로 정리한 툴바</figcaption></figure>
+          <figure class="ai-shot ai-shot-wide"><img src="assets/pub/editor-icons.jpg" alt="툴바 아이콘 세트와 기본·호버·활성·포커스·비활성 버튼 상태 가이드" loading="lazy" /><figcaption>아이콘 세트 · 버튼 상태 가이드</figcaption></figure>
+          <figure class="ai-shot"><img src="assets/pub/editor-table.jpg" alt="표 안에서 표 버튼을 누르면 열리는 표 편집 창. 행·열 추가, 셀 병합, 정렬·배경·테두리 설정" loading="lazy" /><figcaption>표 편집 창</figcaption></figure>
+          <figure class="ai-shot ai-shot-phone"><img src="assets/pub/editor-mobile.jpg" alt="모바일에서 글꼴을 고르는 바텀시트" loading="lazy" /><figcaption>모바일 바텀시트</figcaption></figure>
+        </div>
+
+        <ul class="tag-list"><li class="tag-strong">AI 활용</li><li>Tiptap</li><li>Thymeleaf</li><li>JavaScript</li><li>Shadow DOM</li><li>웹 접근성</li></ul>
+      </article>
 
       <div class="dev-grid">
         <article class="dev-card reveal">
@@ -553,7 +588,7 @@ div.drone_term .drone_index li.wztab-item button:focus {outline:auto;}
         <div class="skill-group reveal">
           <h3>TOOLS · COLLABORATION</h3>
           <div class="skill-cloud" aria-label="협업·도구">
-            <span>Photoshop</span><span>Illustrator</span><span>Git</span><span>AI Dev Tools</span>
+            <span>Photoshop</span><span>Illustrator</span><span>Git</span><span>AI 활용 (기획·디자인·개발)</span><span>Cursor</span>
           </div>
         </div>
       </div>
