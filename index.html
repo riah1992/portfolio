@@ -161,6 +161,23 @@
           </div>
         </div>
 
+        <div class="eims-showcase">
+          <div class="plan-head">
+            <p class="subpages-title">통합관리시스템 · 디자인·퍼블리싱</p>
+          </div>
+          <div class="eims-grid">
+            <figure class="browser-frame">
+              <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+              <div class="shot eims-shot"><img src="assets/pub/eims-menu.jpg" alt="통합관리시스템 통통통 메뉴관리 화면. 왼쪽은 학사관리 메뉴 트리, 오른쪽은 선택한 메뉴의 정보 입력 폼" loading="lazy" /></div>
+              <figcaption><span>PC</span> 통통통 메뉴관리</figcaption>
+            </figure>
+            <div class="eims-copy">
+              <p>통통통을 운영하는 쪽에서 쓰는 통합관리시스템 화면을 같은 시기에 직접 디자인하고 퍼블리싱했습니다.</p>
+              <p>메뉴 트리, 정보 입력 폼, 버튼 크기와 색상을 공통 스타일 가이드로 정리해 여러 관리 화면이 같은 규칙을 따르도록 만들었습니다.</p>
+            </div>
+          </div>
+        </div>
+
         <ul class="tag-list" aria-label="통통통 키워드">
           <li>UI 디자인</li><li>반응형</li><li>사용자 유형별 UI</li><li>공통 컴포넌트</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
         </ul>
@@ -424,6 +441,33 @@ div.drone_term .drone_index li.wztab-item button:focus {outline:auto;}
   outline:2px solid #121212; z-index:2;
   animation:twinklefx 1s infinite linear alternate-reverse;
 }</code></pre>
+        </article>
+        <article class="code-card reveal">
+          <div class="code-meta"><span>05</span><span>통합관리시스템 · css/system/styleGuide.css</span></div>
+          <h3>통합관리시스템 · 스타일 가이드</h3>
+          <p>관리 화면 전체에서 쓰는 색상, 글자 크기, 버튼 크기를 변수와 클래스로 정리한 스타일 가이드입니다. 새 화면도 클래스만 조합하면 같은 모양이 나옵니다.</p>
+          <pre tabindex="0"><code>:root {
+  /* Color */
+  --orange: #ff6000;
+  --blue-2: #0080FF;
+  --grey-3: #62666b;
+  --border-basic-2: #CCD1D7;
+  /* Font */
+  --text-medium: 500;
+  --text-bold: 700;
+  --text-h1: 32px;
+  --text-subtitle4: 14px;
+  --letter-spacing-1: -1px;
+}
+
+.text-h1 { font-size: var(--text-h1); letter-spacing: var(--letter-spacing-1);
+           font-weight: var(--text-bold); line-height: 1.2em; }
+
+/* 버튼: 크기는 클래스 하나로 */
+.h-button-xs { height: 36px; line-height: 36px; font-size: var(--text-subtitle4); }
+.h-button-m  { height: 42px; line-height: 42px; font-size: var(--text-subtitle4); }
+.h-button-l  { height: 54px; line-height: 54px; font-size: var(--text-subtitle2);
+               font-weight: var(--text-medium); }</code></pre>
         </article>
       </div>
     </section>
